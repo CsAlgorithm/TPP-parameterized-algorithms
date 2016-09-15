@@ -34,11 +34,11 @@ The source code of our experiment of TPP-S2 is in the folder /TPP_S2.
 
 Arguments: FileName M K U Q
 
-FileName: The file name of the instance file.
-M:The number of markets.
-K:The number of products.
-U:At most U products can be bought from a supplier.
-Q:At most Q markets can be visited.
+FileName: The file name of the instance file.</br>
+M:The number of markets.</br>
+K:The number of products.</br>
+U:At most U products can be bought from a supplier.</br>
+Q:At most Q markets can be visited.</br>
 
 ###TPP-S1
 
@@ -48,7 +48,7 @@ The source code of our experiment of TPP-S2 is in the folder /TPP_S1.
 
 Arguments: FileName M K Q
 
-FileName: The file name of the instance file.
-M:The number of markets.
-K:The number of products.
-Q:At most Q markets can be visited.
+FileName: The file name of the instance file.</br>
+M:The number of markets.</br>
+K:The number of products.</br>
+Q:At most Q markets can be visited.</br>
