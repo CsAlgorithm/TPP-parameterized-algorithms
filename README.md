@@ -13,20 +13,6 @@ The file "data.rar" is the data set that we have been tested, the file format of
 The method that we used to generate our instance is similar to the method introduced in Laporte's article. We first use the TSPLIB to get the positional information, and then we randomly assign each product to a random number of markets. For a single product, its price is different in different markets, so we first randomly generate a prime price for each product, and the price of it in different market randomly fluctuates within 15% based on prime price.
 
 
-###TPP-S1
-
-We compared our parameterized algorithm of TPP-S1 with the algorithm introduced in [Models for a traveling purchaser problem with additional side-constraints. Luis Gouveia, Ana Paias]. The original algorithm in this article is designed for TPP-S2, we can modify it to fit the TPP-S1 just by setting the parameter D to infinity. Note that parameter D controls a limit on the number of items bought per market.
-
-The source code of our experiment of TPP-S2 is in the folder /TPP_S1.
-
-Arguments: FileName M K Q
-
-FileName: The file name of the instance file.</br>
-M:The number of markets.</br>
-K:The number of products.</br>
-Q:At most Q markets can be visited.</br>
-
-
 ###TPP-S2
 
 We compared our parameterized algorithm of TPP-S2 with the most recent results introduced in [Models for a traveling purchaser problem with additional side-constraints. Luis Gouveia, Ana Paias]. This article introduced two relaxation algorithm, the first is Lagrangian relaxation and the second is dynamic programming relaxation. Because our algorithm is based on dynamic programming, so we compare our algorithm with the latter. Also we can not get access to the original source code of their experiment, so we reimplemented their algorithm in C++.
@@ -39,6 +25,20 @@ FileName: The file name of the instance file.</br>
 M:The number of markets.</br>
 K:The number of products.</br>
 U:At most U products can be bought from a supplier.</br>
+Q:At most Q markets can be visited.</br>
+
+
+###TPP-S1
+
+We compared our parameterized algorithm of TPP-S1 with the algorithm introduced in [Models for a traveling purchaser problem with additional side-constraints. Luis Gouveia, Ana Paias]. The original algorithm in this article is designed for TPP-S2, we can modify it to fit the TPP-S1 just by setting the parameter D to infinity. Note that parameter D controls a limit on the number of items bought per market.
+
+The source code of our experiment of TPP-S2 is in the folder /TPP_S1.
+
+Arguments: FileName M K Q
+
+FileName: The file name of the instance file.</br>
+M:The number of markets.</br>
+K:The number of products.</br>
 Q:At most Q markets can be visited.</br>
 
 
