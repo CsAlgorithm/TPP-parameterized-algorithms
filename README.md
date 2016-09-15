@@ -21,10 +21,10 @@ The source code of our experiment of TPP with budget constraint is in the folder
 
 Arguments: FileName M K B
 
-FileName: The file name of the instance file.
-M:The number of markets.
-K:The number of products.
-B:A minimum budget multiplier.
+FileName: The file name of the instance file.</br>
+M:The number of markets.</br>
+K:The number of products.</br>
+B:A minimum budget multiplier.</br>
 
 ###TPP-S2
 
