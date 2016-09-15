@@ -27,15 +27,6 @@ K:The number of products.</br>
 Q:At most Q markets can be visited.</br>
 
 
-
-Arguments: FileName M K B
-
-FileName: The file name of the instance file.</br>
-M:The number of markets.</br>
-K:The number of products.</br>
-B:A minimum budget multiplier.</br>
-
-
 ###TPP-S2
 
 We compared our parameterized algorithm of TPP-S2 with the most recent results introduced in [Models for a traveling purchaser problem with additional side-constraints. Luis Gouveia, Ana Paias]. This article introduced two relaxation algorithm, the first is Lagrangian relaxation and the second is dynamic programming relaxation. Because our algorithm is based on dynamic programming, so we compare our algorithm with the latter. Also we can not get access to the original source code of their experiment, so we reimplemented their algorithm in C++.
@@ -56,3 +47,10 @@ Q:At most Q markets can be visited.</br>
 We compared our parameterized algorithm of TPP-B with the most recent results introduced in [The traveling purchaser problem with budget constraint. Renata Mansini, Barbara Tocchella]. The Renata's article mainly introduced two heuristic algorithm based on local search. We can not get access to the original source code of their experiment, so we reimplemented the more competitive algorithm MVNS in C++.
 
 The source code of our experiment of TPP with budget constraint is in the folder /TPP_B.
+
+Arguments: FileName M K B
+
+FileName: The file name of the instance file.</br>
+M:The number of markets.</br>
+K:The number of products.</br>
+B:A minimum budget multiplier.</br>
