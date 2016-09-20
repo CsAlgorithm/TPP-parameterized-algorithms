@@ -12,12 +12,13 @@ The file "data.rar" is the data set that we have been tested, the file format of
 
 The method that we used to generate our instance is similar to the method introduced in Laporte's article. We first use the TSPLIB to get the positional information, and then we randomly assign each product to a random number of markets. For a single product, its price is different in different markets, so we first randomly generate a prime price for each product, and the price of it in different market randomly fluctuates within 15% based on prime price.
 
+The filename of each instance in the data set is in format "EEuclideo.m.k.tpp", where m is the number of markets(sites) and k is the number of products.
 
 ###TPP-S2
 
-We compared our parameterized algorithm of TPP-S2 with the most recent results introduced in [Models for a traveling purchaser problem with additional side-constraints. Luis Gouveia, Ana Paias]. This article introduced two relaxation algorithm, the first is Lagrangian relaxation and the second is dynamic programming relaxation. Because our algorithm is based on dynamic programming, so we compare our algorithm with the latter. Also we can not get access to the original source code of their experiment, so we reimplemented their algorithm in C++.
+We compared our parameterized algorithm of TPP-S2 with the most recent results introduced in [Models for a traveling purchaser problem with additional side-constraints. Luis Gouveia, Ana Paias]. This article introduced two relaxation algorithm, the first is Lagrangian relaxation and the second is dynamic programming relaxation. Because our algorithm is based on dynamic programming, so we compare our algorithm with the latter. Also we can not get access to the original source code of their experiment, so we implemented their algorithm in C++.
 
-The source code of our experiment of TPP-S2 is in the folder /TPP_S2.
+The source code of our experiment of TPP-S2 is in the folder /TPP_S2. Our parameterized algorithm A_m is in the subfolder /A_m_TPP_S2, and the algorithm GPSV is in the subfolder /GPSV_TPP_S2.
 
 Arguments: FileName M K U Q
 
@@ -32,7 +33,7 @@ Q: At most Q markets can be visited.</br>
 
 We compared our parameterized algorithm of TPP-S1 with the algorithm introduced in [Models for a traveling purchaser problem with additional side-constraints. Luis Gouveia, Ana Paias]. The original algorithm in this article is designed for TPP-S2, we can modify it to fit the TPP-S1 just by setting the parameter D to infinity. Note that parameter D controls a limit on the number of items bought per market.
 
-The source code of our experiment of TPP-S2 is in the folder /TPP_S1.
+The source code of our experiment of TPP-S2 is in the folder /TPP_S1. Our parameterized algorithm A_k is in the subfolder /A_k_TPP_S1, and the algorithm GPSV is in the subfolder /GPSV_TPP_S1.
 
 Arguments: FileName M K Q
 
@@ -44,9 +45,9 @@ Q: At most Q markets can be visited.</br>
 
 ###TPP-B
 
-We compared our parameterized algorithm of TPP-B with the most recent results introduced in [The traveling purchaser problem with budget constraint. Renata Mansini, Barbara Tocchella]. The Renata's article mainly introduced two heuristic algorithm based on local search. We can not get access to the original source code of their experiment, so we reimplemented the more competitive algorithm MVNS in C++.
+We compared our parameterized algorithm of TPP-B with the most recent results introduced in [The traveling purchaser problem with budget constraint. Renata Mansini, Barbara Tocchella]. The Renata's article mainly introduced two heuristic algorithm based on local search. We can not get access to the original source code of their experiment, so we implemented the more competitive algorithm MVNS in C++.
 
-The source code of our experiment of TPP with budget constraint is in the folder /TPP_B.
+The source code of our experiment of TPP with budget constraint is in the folder /TPP_B. Our parameterized algorithm A_m is in the subfolder /A_m_TPP_B, and the algorithm MVNS is in the subfolder /MVNS_TPP_B.
 
 Arguments: FileName M K B
 
